@@ -30,3 +30,4 @@ fdfs:
     height: 60
   tracker-list: # tracker地址
     - 192.168.5.125:22122
+

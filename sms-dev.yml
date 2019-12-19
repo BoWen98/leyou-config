@@ -12,6 +12,6 @@ spring:
 leyou:
   sms:
     accessKeyId: LTAIR23G84ET9J4O
-    accessKeySecret: IFzXpT1BFAiIvIaESmB8ECRsSVETRm
+    accessKeySecret: 
     signName: 三方录
     verifyCodeTemplate: SMS_157095058

@@ -16,13 +16,22 @@ spring:
       cluster-nodes: 192.168.5.125:9300
   jackson:
     default-property-inclusion: non_null
+  resources:
+    add-mappings: true
+    chain:
+      enabled: true
+      gzipped: true
+      html-application-cache: true
+    cache:
+      period: 3600m
 eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 5
   instance:
-    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true  #当你获取host时，返回的不是主机名，而是ip
     ip-address: 127.0.0.1
-logging:
-  level:
-    com.leyou.search: debug
+    lease-expiration-duration-in-seconds: 10 #10秒不发送九过期
+    lease-renewal-interval-in-seconds: 5 #每隔5秒发一次心跳

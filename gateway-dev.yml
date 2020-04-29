@@ -41,7 +41,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMillisecond: 10000 # 熔断超时时长：10000ms
-leyou:
+ leyou:
   jwt:
     cookieName: LY_TOKEN
     pubKeyPath: C:\\Users\\Bowen\\Desktop\\leyou_jwt\\rsa.pub # 公钥地址

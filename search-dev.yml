@@ -1,21 +1,20 @@
+
 server:
   port: 8083
 spring:
   application:
     name: search-service
-  rabbitmq:
-    host: 192.168.5.125
-    username: leyou
-    password: leyou
-    virtual-host: /leyou
-  redis:
-    host: 192.168.5.125
   data:
     elasticsearch:
-      cluster-name: my-application
+      cluster-name: elasticsearch
       cluster-nodes: 192.168.5.125:9300
+  rabbitmq:
+    virtual-host: /leyou
+    username: leyou
+    password: leyou
+    host: 192.168.5.125
   jackson:
-    default-property-inclusion: non_null
+    default-property-inclusion: non_null # 配置json处理时忽略空值
   resources:
     add-mappings: true
     chain:

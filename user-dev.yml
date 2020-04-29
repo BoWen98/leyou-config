@@ -26,7 +26,7 @@ mybatis:
 logging:
   level:
     com.leyou.user: debug
-ly:
+leyou:
   jwt:
     publicFilePath: C:\\Users\\Bowen\\Desktop\\leyou_jwt\\rsa.pub # 公钥地址
     cookieName: LY_TOKEN # cookie的名称

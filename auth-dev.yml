@@ -11,7 +11,7 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: 127.0.0.1
-ly:
+leyou:
   jwt:
     publicFilePath: C:\\Users\\Bowen\\Desktop\\leyou_jwt\\rsa.pub # 公钥地址
     privateFilePath: C:\\Users\\Bowen\\Desktop\\leyou_jwt\\rsa.pri # 私钥地址

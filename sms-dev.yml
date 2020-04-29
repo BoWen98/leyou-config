@@ -17,4 +17,4 @@ leyou:
     connectTimeout: 5000
     readTimeout: 8000
     signName: 三方录
-    verifyTemplateCode: SMS_157095058
+    verifyCodeTemplate: SMS_157095058
